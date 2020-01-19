@@ -36,5 +36,15 @@ module.exports = {
         }
         
         return response.json(dev)
-    }
+    },
+
+    // Exercício
+
+    async update(){
+
+    },
+
+    async destroy(){
+
+    },
 }
