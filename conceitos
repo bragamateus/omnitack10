@@ -5,3 +5,10 @@
 // Query Params: req.query (Filtros, ordenação, paginação, ...)
 // Route Params: req.params (Identificar um recurso na alteração ou remeção)
 // Body: request.body (Dados para criação ou alteração de um registro)
+
+
+// Conceitos ReactJS
+
+// Componente: Bloco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicaçao
+// Propriedade: Informações que um componente pai passa para um componente filho
+// Estado: informações mantidas pelo componente (Lembrar: imutabilidade)
