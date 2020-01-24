@@ -37,10 +37,11 @@ aside form .input-block label{
     font-size: 14px;
     font-weight: bold;
     display: block;
+
 }
 
 aside form .input-block input{
-    width: 100px;
+    width: 130px;
     height: 32px;
     font-size: 14px;
     color: #666;

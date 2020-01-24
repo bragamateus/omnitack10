@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import TextField from '@material-ui/core/TextField';
 
 function DevForm({ onSubmit }) {
     const [github_username, setGithubUsername] = useState('')
@@ -41,20 +42,22 @@ function DevForm({ onSubmit }) {
     return (
         <form onSubmit={handleSubmit}>
             <div className="input-block">
-                <label htmlFor="github_username">Usuário do Github</label>
-                <input name="github_username"
+                <TextField 
+                    name="github_username"
                     id="username_github"
+                    label="Usuário do Github"
                     required
                     value={github_username}
+                    autoFocus
                     onChange={e => setGithubUsername(e.target.value)}
                 />
             </div>
 
             <div className="input-block">
-                <label htmlFor="techs">Tecnologias</label>
-                <input
+                <TextField
                     name="techs"
                     id="techs"
+                    label="Tecnologias"
                     required
                     value={techs}
                     onChange={e => setTechs(e.target.value)}
@@ -63,11 +66,11 @@ function DevForm({ onSubmit }) {
 
             <div className="input-group">
                 <div className="input-block">
-                    <label htmlFor="latitude">Latitude</label>
-                    <input
+                    <TextField
                         type="number"
                         name="latitude"
                         id="latitude"
+                        label="Latidude"
                         required
                         value={latitude}
                         onChange={e => setLatitude(e.target.value)}
@@ -75,10 +78,10 @@ function DevForm({ onSubmit }) {
                 </div>
 
                 <div className="input-block">
-                    <label htmlFor="longitude">Longitude</label>
-                    <input
+                    <TextField
                         type="number"
                         name="longitude"
+                        label="Longitude"
                         id="longitude"
                         required value={longitude}
                         onChange={e => setLongitude(e.target.value)}
